@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+    <!--[if lt IE 7]>      <html lang="zh" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html lang="zh" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html lang="zh" class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html lang="zh" class="no-js"> <!--<![endif]-->
+    <head>
+        <title>API功能总述 | API文档 | Face++ 最好的免费人脸识别云服务</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=1180, initial-scale=1.0">
+        <link rel="stylesheet" href="../wp-content/themes/faceplusplus/assets/css/all.css?v=2">
+        <link rel="stylesheet" href="../wp-content/themes/faceplusplus/assets/css/theme/light/all.css?v=2">
+        <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400">-->
+        <script src="../wp-content/themes/faceplusplus/assets/js/modernizr.min.js?v=2"></script>
+
+        <link rel="alternate" type="application/rss+xml" title="Face++ 最好的免费人脸识别云服务 &raquo; API功能总述评论Feed" href="http://www.faceplusplus.com.cn/api-overview/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.faceplusplus.com.cn/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.faceplusplus.com.cn/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='大规模人脸搜索' href='http://www.faceplusplus.com.cn/tech_search/' />
+<link rel='next' title='/detection/detect' href='http://www.faceplusplus.com.cn/detection_detect/' />
+<meta name="generator" content="WordPress 3.7.1" />
+<link rel='shortlink' href='http://www.faceplusplus.com.cn/?p=74' />
+
+<!-- All in One SEO Pack 2.0.4.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="canonical" href="index.html" />
+<!-- /all in one seo pack -->
+    </head>
+    <body>
+        <div id="page-wrap">
+            <header id="header">
+                <nav id="header-nav">
+                    <a id="header-logo" href="http://www.faceplusplus.com.cn/" class="dev-zh"></a>
+                    <ul id="header-primary-nav" class="nav-dropdown2 dev-center"><li><a href="http://www.faceplusplus.com.cn/uc_home/">开发者中心</a></li>
+<li><a href="http://www.faceplusplus.com.cn/uc/people/home">我的应用</a></li>
+<li><a href="http://www.faceplusplus.com.cn/create-a-new-app/">快速开始</a></li>
+<li><a class="active" href="index.html">API文档</a></li>
+<li><a href="http://www.faceplusplus.com.cn/dev-tools-sdks/">开发工具与SDK</a></li>
+</ul>
+                    <ul id="header-secondary-nav" class="nav-dropdown">
+                        <li id="page-user-nav" class="hide-theme-dark"><a href="http://www.faceplusplus.com.cn/uc/people/login" class="btn btn-highlight" data-modal-id="login-modal">登录</a></li>
+                        <li><a href="http://www.faceplusplus.com.cn/uc/people/signup" class="page-user-nav-hide-login btn">注册</a></li>
+
+                        <li aria-haspopup="true" class="hide-theme-dark"><a href="index.html#" class="btn nav-btn">
+                            Language <i class="icon icon-angle-down"></i></a>
+                          <ul class="nav-btn-dropdown">
+                            <li><a href="http://www.faceplusplus.com/">English</a></li>
+                            <li><a href="http://www.faceplusplus.com.cn/">中文</a></li>
+                          </ul>
+                    </ul>
+                </nav>
+            </header>
+            <div id="login-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close" data-modal-close>&times;</button>
+                    <h3>登录</h3>
+                    <form class="form-styled form-modal" action="http://www.faceplusplus.com.cn/uc/people/login2" method="post">
+                        <div class="field">
+                            <input id="login_name" name="login_name" type="text" required size="40" placeholder="用户名" />
+                        </div>
+                        <div class="field">
+                            <input id="pwd" name="pwd" type="password" required size="40" placeholder="密码" />
+                        </div>
+                        <div class="field modal-submit-field">
+                            <input class="btn btn-highlight" value="登录" type="submit" />
+                            <div>
+                                <a href="http://www.faceplusplus.com.cn/uc/people/signup">注册</a> | <a href="http://www.faceplusplus.com.cn/uc/people/get_pwd">忘记密码</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+<div id="main-content" class="g-container">
+    <div class="g-row g-equal-height">
+        <div class="g-span-4">
+            <nav class="nav-sidebar tree-style"><ul><li><h3>API概述</h3><ul><li><a class="active" href="index.html">API功能概览</a></li></ul></li><li><h3>人脸检测与分析</h3><ul><li><a href="http://www.faceplusplus.com.cn/detection_detect/">/detection/detect</a></li><li><a href="http://www.faceplusplus.com.cn/detectionlandmark/">/detection/landmark</a></li></ul></li><li><h3>训练模型</h3><ul><li><a href="http://www.faceplusplus.com.cn/train_verify/">/train/verify</a></li><li><a href="http://www.faceplusplus.com.cn/train_search/">/train/search</a></li><li><a href="http://www.faceplusplus.com.cn/trainidentify/">/train/identify</a></li></ul></li><li><h3>人脸识别</h3><ul><li><a href="http://www.faceplusplus.com.cn/recognitioncompare/">/recognition/compare</a></li><li><a href="http://www.faceplusplus.com.cn/recognitionverify-2/">/recognition/verify</a></li><li><a href="http://www.faceplusplus.com.cn/recognitionidentify/">/recognition/identify</a></li><li><a href="http://www.faceplusplus.com.cn/recognitionsearch/">/recognition/search</a></li></ul></li><li><h3>人脸聚类与分组</h3><ul><li><a href="http://www.faceplusplus.com.cn/groupinggrouping/">/grouping/grouping</a></li></ul></li><li><h3>Person管理</h3><ul><li><a href="http://www.faceplusplus.com.cn/personcreate/">/person/create</a></li><li><a href="http://www.faceplusplus.com.cn/persondelete/">/person/delete</a></li><li><a href="http://www.faceplusplus.com.cn/personadd_face/">/person/add_face</a></li><li><a href="http://www.faceplusplus.com.cn/personremove_face/">/person/remove_face</a></li><li><a href="http://www.faceplusplus.com.cn/personset_info/">/person/set_info</a></li><li><a href="http://www.faceplusplus.com.cn/personget_info/">/person/get_info</a></li></ul></li><li><h3>FaceSet管理</h3><ul><li><a href="http://www.faceplusplus.com.cn/facesetcreate/">/faceset/create</a></li><li><a href="http://www.faceplusplus.com.cn/facesetdelete/">/faceset/delete</a></li><li><a href="http://www.faceplusplus.com.cn/facesetadd_face/">/faceset/add_face</a></li><li><a href="http://www.faceplusplus.com.cn/facesetremove_face/">/faceset/remove_face</a></li><li><a href="http://www.faceplusplus.com.cn/facesetset_info/">/faceset/set_info</a></li><li><a href="http://www.faceplusplus.com.cn/facesetget_info/">/faceset/get_info</a></li></ul></li><li><h3>Group管理</h3><ul><li><a href="http://www.faceplusplus.com.cn/groupcreate/">/group/create</a></li><li><a href="http://www.faceplusplus.com.cn/groupdelete/">/group/delete</a></li><li><a href="http://www.faceplusplus.com.cn/groupadd_person/">/group/add_person</a></li><li><a href="http://www.faceplusplus.com.cn/groupremove_person/">/group/remove_person</a></li><li><a href="http://www.faceplusplus.com.cn/groupset_info/">/group/set_info</a></li><li><a href="http://www.faceplusplus.com.cn/groupget_info/">/group/get_info</a></li></ul></li><li><h3>信息查询</h3><ul><li><a href="http://www.faceplusplus.com.cn/infoget_image/">/info/get_image</a></li><li><a href="http://www.faceplusplus.com.cn/infoget_face/">/info/get_face</a></li><li><a href="http://www.faceplusplus.com.cn/infoget_person_list/">/info/get_person_list</a></li><li><a href="http://www.faceplusplus.com.cn/infoget_faceset_list/">/info/get_faceset_list</a></li><li><a href="http://www.faceplusplus.com.cn/infoget_group_list/">/info/get_group_list</a></li><li><a href="http://www.faceplusplus.com.cn/infoget_session/">/info/get_session</a></li><li><a href="http://www.faceplusplus.com.cn/infoget_app/">/info/get_app</a></li></ul></li></ul></nav>        </div>
+        <div class="g-span-8 api-doc">
+            <h1><span style="font-size: 39px;">API功能</span></h1>
+<table class="return-table table-styled">
+<thead>
+<tr>
+<th>接口分类</th>
+<th>接口名称</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detect</td>
+<td><a href="http://www.faceplusplus.com.cn/detection_detect/" target="_blank">/detection/detect</a></td>
+<td>检测一张照片中的人脸信息（脸部位置、年龄、种族、性别等等）</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/detectionlandmark/" target="_blank">/detection/landmark</a></td>
+<td>检测给定人脸相应的面部轮廓，五官等关键点的位置</td>
+</tr>
+<tr>
+<td>train</td>
+<td><a href="http://www.faceplusplus.com.cn/train_verify/" target="_blank">/train/verify</a></td>
+<td>调用/recognition/verify之前需要运行的训练</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/train_search/" target="_blank">/train/search</a></td>
+<td>调用/recognition/search之前需要运行的训练</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/trainidentify/" target="_blank">/train/identify</a></td>
+<td>调用/recognition/identify之前需要运行的训练</td>
+</tr>
+<tr>
+<td>recognition</td>
+<td><a href="http://www.faceplusplus.com.cn/recognitioncompare/" target="_blank">/recognition/compare</a></td>
+<td>对比两张人脸的相似程度</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/recognitionverify-2/" target="_blank">/recognition/verify</a></td>
+<td>给定人脸和人，判断这张人脸是否是给定的人</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/recognitionsearch/" target="_blank">/recognition/search</a></td>
+<td>给定人脸和人脸集合，在集合中找最相似的人脸</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/recognitionidentify/" target="_blank">/recognition/identify</a></td>
+<td>给定人脸和人群，找到人群中最像这张脸的人</td>
+</tr>
+<tr>
+<td>grouping</td>
+<td><a href="http://www.faceplusplus.com.cn/groupinggrouping/" target="_blank">/grouping/grouping</a></td>
+<td>给定人脸集合，将集合中的人脸分成几类，每一类为同一个人</td>
+</tr>
+<tr>
+<td>person</td>
+<td><a href="http://www.faceplusplus.com.cn/personcreate/" target="_blank">/person/create</a></td>
+<td>创建一个人</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/persondelete/" target="_blank">/person/delete</a></td>
+<td>删除一个人</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/personadd_face/" target="_blank">/person/add_face</a></td>
+<td>向一个人添加一张人脸</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/personremove_face/" target="_blank">/person/remove_face</a></td>
+<td>从一个人中删除一张人脸</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/personset_info/" target="_blank">/person/set_info</a></td>
+<td>为一个人设定备注等信息</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/personget_info/" target="_blank">/person/get_info</a></td>
+<td>获得一个人的备注等信息 </td>
+</tr>
+<tr>
+<td>faceset </td>
+<td><a href="http://www.faceplusplus.com.cn/facesetcreate/" target="_blank">/faceset/create</a></td>
+<td>创建一个人脸集合</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/facesetdelete/" target="_blank">/faceset/delete</a></td>
+<td>删除一个人脸集合</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/facesetadd_face/" target="_blank">/faceset/add_face</a></td>
+<td>向一个人脸集合添加人脸</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/facesetremove_face/" target="_blank">/faceset/remove_face</a></td>
+<td>从一个人脸集合中删除人脸</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/facesetset_info/" target="_blank">/faceset/set_info</a></td>
+<td>为一个人集合设定备注等信息</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/facesetget_info/" target="_blank">/faceset/get_info</a></td>
+<td>获得一个人集合的备注等信息</td>
+</tr>
+<tr>
+<td>group</td>
+<td><a href="http://www.faceplusplus.com.cn/groupcreate/" target="_blank">/group/create</a></td>
+<td>创建一个人群</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/groupdelete/" target="_blank">/group/delete</a></td>
+<td>删除一个人群 </td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/groupadd_person/" target="_blank">/group/add_person</a></td>
+<td>向人群中添加一个人</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/groupremove_person/" target="_blank">/group/remove_person</a> </td>
+<td>从人群中删除一个人</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/groupset_info//groupget_info/" target="_blank">/group/get_info</a></td>
+<td>获得人群的备注等信息</td>
+</tr>
+<tr>
+<td>info</td>
+<td><a href="http://www.faceplusplus.com.cn/infoget_image/" target="_blank">/info/get_image</a></td>
+<td>获取一张图片的信息，包括其中的人脸信息</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/infoget_face/" target="_blank">/info/get_face</a></td>
+<td>获取一组人脸的信息</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/infoget_person_list/" target="_blank">/info/get_person_list</a></td>
+<td>获取该应用中所有的人</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/infoget_faceset_list/" target="_blank">/info/get_faceset_list</a></td>
+<td>获取该应用中所有的人脸集合</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/infoget_group_list/" target="_blank">/info/get_group_list</a></td>
+<td>获取该应用中所有的人群</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/infoget_session/" target="_blank">/info/get_session</a></td>
+<td>获取session的状态与结果</td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="http://www.faceplusplus.com.cn/infoget_app/" target="_blank">/info/get_app</a></td>
+<td>获取应用的相关信息</td>
+</tr>
+</tbody>
+</table>
+<h2> </h2>        </div>
+    </div>
+</div>
+        <div class="footer-push"></div>
+        </div>
+
+        <footer class="footer">
+            <div class="g-container">
+                <div class="g-row">
+                    <nav class="footer-nav"><div class="g-span-2"><ul><li class="heading">Face++</li><li><a href="http://www.faceplusplus.com.cn/about/">关于我们</a><li><a href="http://www.faceplusplus.com.cn/join/">加入我们</a><li><a href="http://www.faceplusplus.com.cn/privacy-policy/">隐私政策</a><li><a href="http://www.faceplusplus.com.cn/term-of-use/">使用条款</a></ul></div><div class="g-span-2"><ul><li class="heading">新闻</li><li><a href="http://www.faceplusplus.com.cn/category/news/press/">媒体报道</a><li><a href="http://www.faceplusplus.com.cn/category/news/blog/">更新日志</a></ul></div><div class="g-span-2"><ul><li class="heading">支持</li><li><a class="active" href="index.html">API文档</a><li><a href="http://www.faceplusplus.com.cn/dev-tools-sdks/">开发工具与SDK</a><li><a href="http://research.faceplusplus.com/">学术研究</a><li><a href="http://www.faceplusplus.com.cn/faq/">常见问题</a></ul></div></nav>                    <div class="g-span-3" style="font-size:11px;color:#ddd">
+<ul>
+<li style="padding-bottom:5px;color:#FFF;font-size:14px">联系方式</li>
+<li>技术支持：support@faceplusplus.com</li>
+<li>商务合作：business@faceplusplus.com</li>
+<li>010-62508622</li>
+<li>400-6700-866</li>
+<li>（周一至周五 10:00-18:30）</li>
+<li>北京市海淀区科学院南路2号融科资讯中心A座3层</li>
+</ul>
+                    </div>
+                    <div class="footer-copyright" class="g-span-6">
+                         &copy; 2015 北京旷视科技有限公司 版权所有
+                                                       <br>京ICP备12036813号-6
+                              <br>京公网安备11010802014104号
+                                             </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../wp-content/themes/faceplusplus/assets/js/all.js?v=2"></script>
+        <!--#uc_script#-->
+        		<script type="text/javascript">
+	        var _bdhmProtocol = (("https:" ==document.location.protocol) ? " https://" : " http://");
+	        document.write(unescape("%3Cscript src='" + _bdhmProtocol +"hm.baidu.com/h.js%3F6a215c84698e9a0f587474e49b264edd'type='text/javascript'%3E%3C/script%3E"));
+	    </script>
+    </body>
+</html>
